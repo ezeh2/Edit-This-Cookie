@@ -169,6 +169,10 @@ function setEvents() {
     $("#copyCookiesType").change(function () {
         preferences.copyCookiesType = $("#copyCookiesType").val();
     });
+	
+    $("#storeId").change(function () {
+        preferences.storeId = $("#storeId").val();
+    });	
 
     $("#showDomainBeforeName").click(function () {
         preferences.showDomainBeforeName = $('#showDomainBeforeName').prop("checked");
