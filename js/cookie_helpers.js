@@ -142,9 +142,11 @@ var cookiesToString = {
         string += "[\n";
         for (var i = 0; i < cookies.length; i++) {
             cookie = cookies[i];
-            cookie.id = i + 1;
-            string += JSON.stringify(cookie, null, 4);
-            if (i < cookies.length - 1)
+			var cookie2 = JSON.parse(JSON.stringify(cookie))
+            cookie2.id = i + 1;
+			cookie2.storeId="bla";
+            string += JSON.stringify(cookie2, null, 4);
+            if (i < cookie2.length - 1)
                 string += ",\n";
         }
         string += "\n]";
