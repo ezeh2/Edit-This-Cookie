@@ -60,6 +60,7 @@ function setOptions() {
     $("#maxDateType").buttonset("refresh");
 
     $("option[value='" + preferences.copyCookiesType + "']").prop("selected", true);
+	$("#storeId").val(preferences.storeId);
 
     $("#showDomainBeforeName").prop('checked', preferences.showDomainBeforeName);
     $("#showDomainBeforeName").prop("disabled", !preferences.showDomain);

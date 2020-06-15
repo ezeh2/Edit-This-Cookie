@@ -62,6 +62,9 @@ var preferences_template = {
     "copyCookiesType": {
         "default_value": "json"
     },
+    "storeId": {
+        "default_value": "e23ee"
+    },
     // If true, the standard icon on the toobar is changed for a christmassy one in certain periods of the year
     "showChristmasIcon": {
         "default_value": true

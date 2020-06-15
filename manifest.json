@@ -42,7 +42,7 @@
         "storage",
         "clipboardWrite"
     ],
-    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com https://gateway.zscloud.net; object-src 'self'",
     "minimum_chrome_version": "41",
     "manifest_version": 2,
     "update_url": "http://clients2.google.com/service/update2/crx"
