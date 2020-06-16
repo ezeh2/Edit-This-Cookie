@@ -144,7 +144,9 @@ var cookiesToString = {
             cookie = cookies[i];
 			var cookie2 = JSON.parse(JSON.stringify(cookie))
             cookie2.id = i + 1;
-			cookie2.storeId="x" + preferences.storeId;
+			if (preferences.storeId) {
+				cookie2.storeId=preferences.storeId;				
+			}
             string += JSON.stringify(cookie2, null, 4);
             if (i < cookies.length - 1)
                 string += ",\n";
